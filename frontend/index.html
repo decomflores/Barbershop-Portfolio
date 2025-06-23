@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbershop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="menu-toggle">☰</button>
+            <ul id="menu">
+                <li><a href="#prices">Services</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="hero">
+            <img src="../img/YouTube Banner - Your Style, Our Passion, Every Time.png" alt="">
+        </div>
+    </section>
+
+    <main>
+        <section id="prices" class="services">
+            <h1>Services</h1>
+            <div class="card-container">
+                <div class="card card-1">
+                    <div class="card-info">
+                        <h3>Buzz Cut</h3>
+                        <p>R$ 20,00</p>
+                        <span>30min</span>
+                    </div>
+                </div>
+                <div class="card card-2">
+                    <div class="card-info">
+                        <h3>Detailed Cut</h3>
+                        <p>R$ 30,00</p>
+                        <span>45min</span>
+                    </div>
+                </div>
+                <div class="card card-3">
+                    <div class="card-info">
+                        <h3>Hair and Beard</h3>
+                        <p>R$ 50,00</p>
+                        <span>1 hour</span>
+                    </div>
+                </div>
+        </section>
+
+    <section id="schedule">
+        <h2>Book Your Appointment</h2>
+        <form id="booking-form">
+            <label for="client-name">Name:</label>
+            <input type="text" id="client-name" required placeholder="Your name">
+
+            <label for="client-phone">Phone:</label>
+            <input type="tel" id="client-phone" required placeholder="Your phone number">
+
+            <label for="client-date">Date:</label>
+            <input type="date" id="client-date" required>
+
+            <label for="hour-select">Time:</label>
+            <select id="hour-select" required>
+            <option value="">Select a time</option>
+            <option value="09:00">09:00 AM</option>
+            <option value="10:00">10:00 AM</option>
+            <option value="11:00">11:00 AM</option>
+            <option value="13:00">01:00 PM</option>
+            <option value="14:00">02:00 PM</option>
+            <option value="15:00">03:00 PM</option>
+            <option value="16:00">04:00 PM</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+            <section id="about">
+                <h2>About Us</h2>
+                <p>Welcome to our barbershop — a neighborhood tradition for over 30 years.
+                </p>
+
+                <p>Located in the heart of the community, we've been proudly serving generations of clients with quality haircuts, classic shaves, and a friendly atmosphere. What started as a small, family-run shop has grown into a trusted local landmark where everyone feels at home.</p>
+
+                <p>Our team of experienced barbers combines traditional techniques with modern styles to ensure every client leaves looking and feeling their best. Whether you're here for a quick trim or a full grooming session, you'll always receive personalized service and genuine care.
+                </p>
+
+                <p>Thank you for being part of our story — we look forward to welcoming you soon.</p>
+            </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

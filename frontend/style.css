@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    font-family: "Smythe", system-ui;
+    background-color: #f4c87e;
+    text-align: center;
+}
+
+header {
+    padding: 12px;
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+header button {
+    align-items: center;
+    margin: 0 auto;
+    font-size: 24px;
+    background-color: #a21318;
+    border: none;
+    color: white;
+    border-radius: 12px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.1);
+    transition: 0.5s;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #menu {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.8s ease, opacity 0.4s ease;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #menu.show {
+        max-height: 300px; /* suficiente para exibir todos os itens */
+        opacity: 1;
+    }
+
+    #menu-toggle {
+        display: block;
+        margin: 0 auto;
+    }
+
+    nav ul li a {
+        font-size: 24px;
+        padding: 10px 0;
+    }
+}
+
+.hero img {
+    width: 100%;
+    max-height: 600px;
+}
+
+
+/* Cards - Services */
+
+.services h1 {
+    font-size: 48px;
+}
+
+.services .card-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 36px;
+}
+
+.card-container .card {
+    margin-right: 4px;
+    width: 120px;
+    height: 180px; /* altura visível */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* texto vai pra parte de baixo */
+    position: relative;
+    color: white;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.card-1 {
+    background-image: url('../img/pexels-nickoloui-1319461.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.card-2 {
+    background-image: url('../img/pexels-zvolskiy-1805600.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.card-3 {
+    background-image: url('../img/pexels-thgusstavo-2521978.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-info h3,
+.card-info p,
+.card-info span {
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+.card-info {
+    background-color: rgba(0, 0, 0, 0.5); /* fundo semitransparente para destacar */
+    padding: 4px;
+    border-radius: 10px;
+}
+
+#schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    background-color: #fff3e0; /* cor suave de fundo */
+}
+
+#schedule h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+#booking-form label {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+#booking-form input,
+#booking-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+#booking-form button {
+    background-color: #a21318;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#booking-form button:hover {
+    background-color: #7e0f14;
+}
