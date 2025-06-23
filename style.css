@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    #menu {
+        display: none;
+        flex-direction: column;
+    }
+    #menu-toggle {
+        display: block;
+    }
+}
