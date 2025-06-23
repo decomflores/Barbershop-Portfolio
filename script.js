@@ -15,7 +15,7 @@ const daySelect = document.getElementById("day-select");
 const hourSelect = document.getElementById("hour-select");
 const form = document.getElementById("booking-form");
 
-const numeroBarbearia = "5551998284206"; // Substitua pelo número da barbearia (apenas números, com DDI)
+const numeroBarbearia = "5551998284206";
 
 function preencherDias() {
     daySelect.innerHTML = "";
